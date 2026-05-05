@@ -1,0 +1,78 @@
+:root {
+    --primary: #2563eb;
+    --danger: #ef4444;
+    --bg: #f8fafc;
+    --text: #1e293b;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--bg);
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.doc-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.doc-table th, .doc-table td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.btn-delete {
+    background: none;
+    border: none;
+    color: var(--danger);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-delete:hover {
+    text-decoration: underline;
+}

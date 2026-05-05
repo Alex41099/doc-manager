@@ -1,10 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocManager | Централизованное хранение</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="container">
+    <header>
+        <h1>Управление документами</h1>
+        <div class="stats" id="stats">Всего документов: 0</div>
+    </header>
 
+    <section class="controls">
+        <div class="upload-box">
+            <input type="file" id="fileInput" hidden>
+            <button class="btn-primary" onclick="document.getElementById('fileInput').click()">
+                + Добавить документ
+            </button>
+        </div>
+        <input type="text" id="searchInput" placeholder="Поиск по названию...">
+    </section>
+
+    <main>
+        <table class="doc-table">
+            <thead>
+            <tr>
+                <th>Название</th>
+                <th>Тип</th>
+                <th>Размер</th>
+                <th>Дата добавления</th>
+                <th>Действия</th>
+            </tr>
+            </thead>
+            <tbody id="docList">
+            <!-- Документы появятся здесь -->
+            </tbody>
+        </table>
+    </main>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
